@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #ECEDE0;
+    padding: 2.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #24384B;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3C93AF;
+    font-weight: bold;
+}
+
+body {
+    background-color: #ECEDE0;
+    line-height: 1.6;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    padding-inline: 14%;
+}
+
+.technologies{
+    display: flex;
+    height: 100px;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+.hero {
+    padding: 5rem 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #24384B;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-text .highlight {
+    color: #3C93AF;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #3C93AF;
+    margin-bottom: 2rem;
+    width: 30rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background: transparent;
+    border: 2px solid #24384B;
+    border-radius: 12px;
+    color: #24384B;
+    padding: 0.5rem 1.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #24384B;
+    color: #ECEDE0;
+}
+
+.subtitle{
+    margin-top: 80px;
+    font-size: 40px;
+}
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.players-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: -3.5rem;
+    background-color: #2C3E50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

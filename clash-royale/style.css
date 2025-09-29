@@ -50,11 +50,45 @@ section{
     padding-inline: 14%;
 }
 
-.technologies{
+.technologies {
     display: flex;
-    height: 100px;
-    gap: 50px;
-    margin-top: 80px;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.tech-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    border: 2px solid #3C93AF;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.tech-info h3 {
+    color: #24384B;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.tech-info p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .hero {
@@ -82,6 +116,13 @@ section{
 .hero-text .highlight {
     color: #3C93AF;
 }
+
+.technologies img{
+  
+  filter: brightness(0) saturate(100%) invert(17%) sepia(18%) saturate(974%) hue-rotate(173deg) brightness(96%) contrast(91%);
+
+}
+
 
 .hero-text p {
     font-size: 1rem;
@@ -113,7 +154,11 @@ section{
 
 .subtitle{
     margin-top: 80px;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #24384B;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 .hero-image {
     position: relative;

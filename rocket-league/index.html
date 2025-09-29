@@ -8,13 +8,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#programacao">Programação</a></li>
-                <li><a href="#pagina">Página</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/rocket-league/images/logo-games.png" alt="Logo Games">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#programacao">Programação</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -22,13 +27,154 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>This is <span class="highlight">Rocket League!</span><br>Welcome to the hybrid of arcade-style soccer and vehicular!</h1>
-                        <p>Customize your car, take to the field, and compete in one of the most critically acclaimed sports games of all time!</p>
-                        <a href="https://www.rocketleague.com/pt-br/" target="_blank" class="cta-button">See More</a>
+                        <h1>Este é o <span class="highlight">Rocket League!</span><br>Bem-vindos a junção de futebol arcade com carros turbinados!</h1>
+                        <p>Personalize seu carro, entre em campo e compita em um dos jogos esportivos mais aclamados de todos os tempos!</p>
+                        <a href="https://www.rocketleague.com/pt-br/" target="_blank" class="cta-button">Saiba Mais</a>
                     </div>
                     <div class="hero-image">
                         <img src="images/rocket-league-car.jpg" alt="Rocket League Car">
                         <div class="players-badge">+100M Players</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technologies" id="tecnologias">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Tecnologias do <span class="highlight">Rocket League</span></h2>
+                    <p>Conheça as principais tecnologias e linguagens de programação utilizadas no desenvolvimento deste incrível jogo</p>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++ Icon">
+                        </div>
+                        <h3>C++</h3>
+                        <p>Linguagem principal para o desenvolvimento do engine do jogo, proporcionando alta performance e controle de baixo nível.</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Icon">
+                        </div>
+                        <h3>Python</h3>
+                        <p>Utilizado para automação, scripts de build, ferramentas de desenvolvimento e análise de dados do jogo.</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon">
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Usado no desenvolvimento de interfaces web, sistemas de matchmaking e integração com plataformas online.</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Docker Icon">
+                        </div>
+                        <h3>Docker</h3>
+                        <p>Containerização para servidores de jogo, facilitando o deployment e escalabilidade dos serviços online.</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js Icon">
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>Backend para APIs, sistemas de ranking, gerenciamento de usuários e integração com Steam e Epic Games.</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" alt="Unity Icon">
+                        </div>
+                        <h3>Unreal Engine</h3>
+                        <p>Engine de jogo utilizada como base, fornecendo renderização 3D, física realista e ferramentas de desenvolvimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="history" id="historia">
+            <div class="container">
+                <div class="section-header">
+                    <h2>História do <span class="highlight">Rocket League</span></h2>
+                    <p>Descubra a jornada desde o conceito inicial até se tornar um dos jogos mais populares do mundo</p>
+                </div>
+                
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2008</div>
+                        <div class="timeline-content">
+                            <h3>Supersonic Acrobatic Rocket-Powered Battle-Cars</h3>
+                            <p>O predecessor do Rocket League foi lançado pela Psyonix, estabelecendo o conceito básico de carros jogando futebol.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h3>Lançamento do Rocket League</h3>
+                            <p>Desenvolvido com Unreal Engine 3, o jogo foi lançado em julho e rapidamente se tornou um fenômeno mundial.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h3>Free-to-Play</h3>
+                            <p>O jogo se tornou gratuito, resultando em um crescimento explosivo da base de jogadores para mais de 100 milhões.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programming-curiosities" id="curiosidades">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Curiosidades de <span class="highlight">Programação</span></h2>
+                    <p>Explore os aspectos técnicos fascinantes por trás do desenvolvimento do Rocket League</p>
+                </div>
+                
+                <div class="curiosities-grid">
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">120</div>
+                        <h3>FPS Constantes</h3>
+                        <p>O jogo foi otimizado para rodar a 120 FPS constantes em competições, utilizando algoritmos de otimização de física avançados em C++.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">0.008</div>
+                        <h3>Latência Mínima</h3>
+                        <p>O sistema de networking foi desenvolvido para alcançar latência de apenas 8ms, usando predição de movimento e sincronização deterministica.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">50000</div>
+                        <h3>Linhas de Código</h3>
+                        <p>O engine de física personalizado contém mais de 50.000 linhas de código C++ para simular o comportamento realista da bola e carros.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">256</div>
+                        <h3>Replay System</h3>
+                        <p>O sistema de replay armazena apenas 256 bytes por segundo por jogador, usando compressão de dados e interpolação inteligente.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">1M</div>
+                        <h3>Partidas Simultâneas</h3>
+                        <p>A infraestrutura em nuvem suporta mais de 1 milhão de partidas simultâneas usando arquitetura de microserviços em Docker.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">60Hz</div>
+                        <h3>Tick Rate</h3>
+                        <p>Servidores rodam a 60Hz (60 atualizações por segundo), garantindo precisão nas colisões e movimentos usando algoritmos de detecção de colisão otimizados.</p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ECEDE0; /* fundo */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ECEDE0;
+    padding: 2rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #24384B; /* texto */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3C93AF; /* detalhes */
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding-inline: 14%;
+}
+
+.hero {
+    padding: 5rem 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #24384B;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-text .highlight {
+    color: #ff8a00; /* laranja mantido */
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #3C93AF;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+}
+
+.cta-button {
+    background: transparent;
+    border: 2px solid #24384B;
+    border-radius: 12px;
+    color: #24384B;
+    padding: 0.5rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #24384B;
+    color: #ECEDE0;
+}
+
+.subtitle {
+    margin-top: 80px;
+    font-size: 2rem;
+    color: #24384B;
+}
+
+.technologies {
+    display: flex;
+    height: 100px;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-plusplus{
+    width: 200px;
+}
+
+.vulkan{
+    width: 200px;
+}
+
+.source2{
+    width: 200px;
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.players-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: -3.5rem;
+    background-color: #24384B;
+    color: #ECEDE0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

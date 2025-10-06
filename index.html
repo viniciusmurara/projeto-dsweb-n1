@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library - Selecione seu Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="rocket-league/images/logo-games.png" alt="Logo Games">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia-programacao/index.html">Programação</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-logo">
+                    <img src="rocket-league/images/logo-games.png" alt="Logo Games">
+                </div>
+                <div class="hero-content">
+                    <h1>Sua <span class="highlight">Biblioteca</span> de Jogos</h1>
+                    <p>Explore e descubra os jogos mais incríveis do universo dos games. Selecione um jogo e mergulhe em aventuras épicas!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="games-library">
+            <div class="container">
+                <div class="library-header">
+                    <h2>Selecione um <span class="highlight">Jogo</span></h2>
+                    <p>Clique em qualquer jogo para explorar mais detalhes, tecnologias e curiosidades</p>
+                </div>
+                
+                <div class="games-grid">
+                    <article class="game-card" onclick="window.location.href='rocket-league/index.html'">
+                        <div class="game-image">
+                            <img src="rocket-league/images/rocket-league-car.jpg" alt="Rocket League">
+                            <div class="game-overlay">
+                                <div class="play-button">
+                                    <span>▶ Explorar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Rocket League</h3>
+                            <p>Futebol arcade com carros turbinados</p>
+                            <div class="game-stats">
+                                <span class="players">+100M Jogadores</span>
+                                <span class="genre">Esportes</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card" onclick="window.location.href='clash-royale/index.html'">
+                        <div class="game-image">
+                            <img src="clash-royale/images/clashroyale-android-ios-review.jpg" alt="Clash Royale">
+                            <div class="game-overlay">
+                                <div class="play-button">
+                                    <span>▶ Explorar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Clash Royale</h3>
+                            <p>Estratégia em tempo real com cartas</p>
+                            <div class="game-stats">
+                                <span class="players">+50M Jogadores</span>
+                                <span class="genre">Estratégia</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card" onclick="window.location.href='cs2/index.html'">
+                        <div class="game-image">
+                            <img src="cs2/img/ccs2.jpg" alt="Counter-Strike 2">
+                            <div class="game-overlay">
+                                <div class="play-button">
+                                    <span>▶ Explorar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Counter-Strike 2</h3>
+                            <p>FPS competitivo revolucionário</p>
+                            <div class="game-stats">
+                                <span class="players">+20 Anos</span>
+                                <span class="genre">FPS</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="sobre-nos">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre <span class="highlight">Nós</span></h2>
+                        <p>Somos apaixonados por jogos e tecnologia. Nossa missão é explorar os aspectos técnicos fascinantes por trás dos jogos mais populares do mundo.</p>
+                        <p>Aqui você encontrará análises detalhadas sobre programação, tecnologias utilizadas e curiosidades do desenvolvimento de games que marcaram gerações.</p>
+                        <div class="stats-mini">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Jogos Analisados</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Tecnologias</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">200M+</span>
+                                <span class="stat-label">Jogadores</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="historia-programacao/images/tecnologias.png" alt="Tecnologias de Programação">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

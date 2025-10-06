@@ -7,8 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ===== Layout Base ===== */
 body {
-    background-color: #ECEDE0; /* fundo */
+    background-color: #ECEDE0;
     line-height: 1.6;
     padding-top: 12vh;
 }
@@ -32,11 +33,6 @@ header {
     padding: 0 14%;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
     height: 56px;
     width: auto;
@@ -46,13 +42,11 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 3rem;
 }
 
 nav ul li a {
-    color: #24384B; /* texto */
+    color: #24384B;
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -60,10 +54,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #3C93AF; /* detalhes */
+    color: #3C93AF;
     font-weight: bold;
 }
 
+/* ===== Hero ===== */
 section {
     display: flex;
     flex-direction: column;
@@ -96,7 +91,7 @@ section {
 }
 
 .hero-text .highlight {
-    color: #ff8a00; /* laranja mantido */
+    color: #ff8a00;
 }
 
 .hero-text p {
@@ -125,10 +120,12 @@ section {
     color: #ECEDE0;
 }
 
+/* ===== Tecnologias (mantida) ===== */
 .subtitle {
     margin-top: 80px;
     font-size: 2rem;
     color: #24384B;
+    text-align: center;
 }
 
 .technologies {
@@ -140,18 +137,11 @@ section {
     align-items: center;
 }
 
-.c-plusplus{
+.c-plusplus, .vulkan, .source2 {
     width: 200px;
 }
 
-.vulkan{
-    width: 200px;
-}
-
-.source2{
-    width: 200px;
-}
-
+/* ===== Hero Image ===== */
 .hero-image {
     position: relative;
     display: flex;
@@ -178,4 +168,152 @@ section {
     font-weight: 600;
     font-size: 0.9rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== História ===== */
+.history {
+    padding: 5rem 0;
+    background-color: #ECEDE0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #24384B;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #5A5A5A;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.history-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.history-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3C93AF, #24384B);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) { flex-direction: row; }
+.timeline-item:nth-child(even) { flex-direction: row-reverse; }
+
+.timeline-year {
+    background: #3C93AF;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 100px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 0 2rem;
+    flex: 1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E8E8E8;
+}
+
+.timeline-content h3 {
+    color: #24384B;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #5A5A5A;
+    line-height: 1.6;
+}
+
+/* ===== Curiosidades ===== */
+.programming-curiosities {
+    padding: 5rem 0;
+    background-color: #F5F5F0;
+}
+
+.curiosities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.curiosity-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #E8E8E8;
+    position: relative;
+    overflow: hidden;
+}
+
+.curiosity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff8a00, #24384B);
+}
+
+.curiosity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.curiosity-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3C93AF;
+    margin-bottom: 1rem;
+}
+
+.curiosity-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #24384B;
+    margin-bottom: 1rem;
+}
+
+.curiosity-card p {
+    font-size: 0.9rem;
+    color: #5A5A5A;
+    line-height: 1.6;
 }

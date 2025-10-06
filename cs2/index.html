@@ -7,50 +7,137 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="../rocket-league/images/logo-games.png" alt="Logo Games">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="../historia-programacao/index.html">Programação</a></li>
-                    <li><a href="#sobre-nos">Sobre Nós</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="../rocket-league/images/logo-games.png" alt="Logo Games">
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../historia-programacao/index.html">Programação</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <main>
-        <section class="hero" id="inicio">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Bem-vindo ao <span class="highlight">Counter-Strike 2!</span><br> A evolução do FPS competitivo mais famoso do mundo.</h1>
-                        <p>CS2 traz gráficos atualizados, engine Source 2 e melhorias de jogabilidade — mantendo a essência que transformou Counter-Strike em referência nos e-sports.</p>
-                        <a href="https://www.counter-strike.net/cs2" target="_blank" class="cta-button">Ver mais</a>
+<main>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Bem-vindo ao <span class="highlight">Counter-Strike 2!</span><br>
+                        A evolução do FPS competitivo mais famoso do mundo.</h1>
+                    <p>CS2 traz gráficos atualizados, engine Source 2 e melhorias de jogabilidade — mantendo a essência que transformou Counter-Strike em referência nos e-sports.</p>
+                    <a href="https://www.counter-strike.net/cs2" target="_blank" class="cta-button">Ver mais</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/cs2/img/ccs2.jpg" alt="Counter Strike 2">
+                    <div class="players-badge">+20 anos de história</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tecnologias (mantida como no código original) -->
+        <h2 class="subtitle" id="tecnologias">Tecnologias</h2>
+        <div class="technologies">
+            <img src="/cs2/img/1643312603cpp.png" alt="C++" class="c-plusplus">
+            <img src="/cs2/img/vulkan.png" alt="Vulkan" class="vulkan">
+            <img src="/cs2/img/source2.png" alt="Source 2" class="source2">
+        </div>
+    </section>
+
+    <!-- Programação Section -->
+    <section class="container" id="programacao">
+        <h2 class="subtitle">Como foi programado</h2>
+        <p>O Counter-Strike 2 foi desenvolvido sobre a <strong>engine Source 2</strong>, utilizando principalmente a linguagem <strong>C++</strong> para sistemas de alto desempenho como renderização, física e rede.</p>
+        <p>Para gráficos, são usados <strong>shaders</strong> escritos em HLSL/GLSL rodando sobre APIs modernas como Vulkan e DirectX. O modelo cliente-servidor garante baixa latência e confiabilidade em competições.</p>
+        <p>Ferramentas do Source 2 também permitem que criadores desenvolvam mapas, skins e conteúdo adicional, fortalecendo a comunidade.</p>
+    </section>
+
+    <!-- História Section -->
+    <section class="history" id="historia">
+        <div class="container">
+            <div class="section-header">
+                <h2>História do <span class="highlight">Counter-Strike</span></h2>
+                <p>Do mod amador de Half-Life ao fenômeno global dos e-sports.</p>
+            </div>
+
+            <div class="history-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1999</div>
+                    <div class="timeline-content">
+                        <h3>O Nascimento</h3>
+                        <p>Counter-Strike começou como um mod criado por Minh Le e Jess Cliffe para o jogo Half-Life, conquistando rapidamente uma enorme base de jogadores.</p>
                     </div>
-                    <div class="hero-image">
-                        <img src="/cs2/img/ccs2.jpg" alt="Counter Strike 2">
-                        <div class="players-badge">+20 anos de história</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2004</div>
+                    <div class="timeline-content">
+                        <h3>CS: Source</h3>
+                        <p>A Valve lançou o Counter-Strike Source, migrando o jogo para a engine Source, trazendo melhorias visuais e físicas mais realistas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2012</div>
+                    <div class="timeline-content">
+                        <h3>CS: GO</h3>
+                        <p>Com o lançamento de Global Offensive, o jogo consolidou-se como o principal título competitivo de FPS no cenário mundial.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>Chegada do CS 2</h3>
+                        <p>Counter-Strike 2 trouxe a engine Source 2, gráficos atualizados e física aprimorada, mantendo o DNA competitivo que define a franquia.</p>
                     </div>
                 </div>
             </div>
-            <h2 class="subtitle" id="tecnologias">Tecnologias</h2>
-            <div class="technologies">
-                <img src="/cs2/img/1643312603cpp.png" alt="C++" class="c-plusplus">
-                <img src="/cs2/img/vulkan.png" alt="Vulkan" class="vulkan">
-                <img src="/cs2/img/source2.png" alt="Source 2" class="source2">
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="container" id="programacao">
-            <h2 class="subtitle">Como foi programado</h2>
-            <p>O Counter-Strike 2 foi desenvolvido sobre a <strong>engine Source 2</strong>, utilizando principalmente a linguagem <strong>C++</strong> para sistemas de alto desempenho como renderização, física e rede.</p>
-            <p>Para gráficos, são usados <strong>shaders</strong> escritos em HLSL/GLSL rodando sobre APIs modernas como Vulkan e DirectX. O modelo cliente-servidor garante baixa latência e confiabilidade em competições.</p>
-            <p>Ferramentas do Source 2 também permitem que criadores desenvolvam mapas, skins e conteúdo adicional, fortalecendo a comunidade.</p>
-        </section>
-    </main>
+    <!-- Curiosidades Section -->
+    <section class="programming-curiosities" id="curiosidades">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curiosidades de <span class="highlight">Programação</span></h2>
+                <p>Alguns fatos técnicos fascinantes por trás da criação do Counter-Strike 2</p>
+            </div>
+
+            <div class="curiosities-grid">
+                <div class="curiosity-card">
+                    <div class="curiosity-number">64</div>
+                    <h3>Tick Rate</h3>
+                    <p>Os servidores do CS 2 operam a 64 Hz com tecnologia sub-tick, garantindo respostas imediatas e jogabilidade precisa.</p>
+                </div>
+                <div class="curiosity-card">
+                    <div class="curiosity-number">2M</div>
+                    <h3>Jogadores Simultâneos</h3>
+                    <p>Durante o lançamento, mais de 2 milhões de jogadores estavam simultaneamente online no Steam.</p>
+                </div>
+                <div class="curiosity-card">
+                    <div class="curiosity-number">0.01</div>
+                    <h3>Precisão de Rede</h3>
+                    <p>O sistema de predição e correção de lag trabalha em intervalos de 10 ms, mantendo a experiência fluida mesmo em conexões instáveis.</p>
+                </div>
+                <div class="curiosity-card">
+                    <div class="curiosity-number">4K</div>
+                    <h3>Texturas em Alta</h3>
+                    <p>O Source 2 introduziu suporte completo a texturas 4K, luz volumétrica e reflexos dinâmicos.</p>
+                </div>
+                <div class="curiosity-card">
+                    <div class="curiosity-number">20+</div>
+                    <h3>Anos de Código</h3>
+                    <p>A franquia mantém partes de código otimizadas desde o primeiro Counter-Strike, continuamente aprimoradas para o hardware moderno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>

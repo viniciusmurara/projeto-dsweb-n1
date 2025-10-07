@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -40,61 +41,28 @@ header {
     object-fit: contain;
 }
 
-body {
-  background-color: #f8f9ec;
-  color: #24384b;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10%;
-}
-
-header.navbar {
-  background-color: #f8f9ec;
-  padding: 20px 10%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo h1 {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 900;
-  font-size: 1.8rem;
-  color: #24384b;
-}
-
-.logo span {
-  color: #3c93af;
-}
-
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: #24384b;
-  font-weight: 500;
-  transition: 0.3s;
+nav ul li {
+    display: inline;
 }
 
-nav a:hover,
-nav a.active {
-  color: #3c93af;
+nav ul li a {
+    color: #24384B;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3C93AF;
+    font-weight: bold;
 }
 
 .hero {

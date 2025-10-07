@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamefy Code - Biblioteca de Jogos</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;900&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description"
+        content="Explore a fundo a tecnologia e o desenvolvimento por trás dos seus jogos favoritos como CS2, Rocket League e Clash Royale. Descubra linguagens de programação, engines e a história do gaming." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../rocket-league/images/logo-games.png" alt="Logo Games">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../historia-programacao/index.html">História</a></li>
+                    <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore o universo dos <span>Games</span></h1>
+            <p>
+                Descubra os bastidores dos jogos mais populares, tecnologias utilizadas e curiosidades incríveis sobre o
+                desenvolvimento de cada um. <br> <strong>Mergulhe no código</strong> que dá vida às suas aventuras
+                favoritas.
+            </p>
+            <a href="#sobre" class="btn-hero">Comece a Desvendar</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>A <span>Missão</span> Gamefy Code</h2>
+                <p class="lead-paragraph">
+                    Na <strong>Gamefy Code</strong>, desvendamos a mágica por trás da tela. Somos a ponte entre o
+                    jogador apaixonado e o engenheiro de software, revelando os <strong>segredos técnicos</strong> que
+                    moldam os universos digitais.
+                </p>
+                <p>
+                    Nosso foco está em dissecar as <strong>tecnologias</strong> utilizadas nos títulos mais icônicos,
+                    desde as linguagens de programação de alto desempenho (C++, C#, etc.) até as complexas
+                    <strong>engines de jogo</strong> (Unity, Unreal, Source 2). Acreditamos que entender o código
+                    aprofunda a admiração pelo jogo.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Análises Detalhadas</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Tecnologias Exploradas</p>
+                    </div>
+                    <div class="stat">
+                        <h3>&infin;</h3>
+                        <p>Curiosidades Técnicas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="assets/tecnologia-jogos.webp" alt="Representação de código e tecnologias de jogos" />
+            </div>
+        </div>
+    </section>
+
+    <section class="history-preview">
+        <div class="history-content">
+            <div class="history-text">
+                <h2>Do <span>Arcade</span> ao Metaverso: A Jornada do Código</h2>
+                <p>
+                    Você sabe como o primeiro game foi programado? Ou como a complexidade de um simples "Pong" evoluiu
+                    para os gráficos fotorrealistas de hoje? A história dos jogos é inseparável da história da
+                    programação.
+                </p>
+                <p>
+                    Embarque em uma retrospectiva fascinante, desde os primeiros bits e bytes em máquinas gigantes até o
+                    desenvolvimento ágil e as inovações em <strong>Inteligência Artificial</strong> e <strong>Cloud
+                        Gaming</strong>. Uma viagem essencial para quem ama games e código!
+                </p>
+                <a href="historia-jogos/index.html" class="btn-history">Descubra a História Completa <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="history-image">
+                <img src="assets/fliperama.jpg" alt="Máquina de Arcade e código antigo" />
+            </div>
+        </div>
+    </section>
+
+    <section id="jogos" class="games-section">
+        <div class="section-header">
+            <h2>Análises de <span>Código</span> e Game Design</h2>
+            <p>Clique em um card para ver o detalhamento técnico e as linguagens por trás do game</p>
+        </div>
+        <div class="games-grid">
+            <div class="game-card" onclick="window.location.href='cs2/index.html'">
+                <img src="cs2/img/ccs2.jpg" alt="Counter Strike 2" />
+                <div class="overlay">
+                    <h3>Counter-Strike 2</h3>
+                    <p>FPS competitivo e estratégico. Engine: Source 2</p>
+                    <span class="tag">FPS</span>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="window.location.href='rocket-league/index.html'">
+                <img src="rocket-league/images/rocket-league-car.jpg" alt="Rocket League" />
+                <div class="overlay">
+                    <h3>Rocket League</h3>
+                    <p>Futebol com carros turbinados. Engine: Unreal Engine</p>
+                    <span class="tag">Esportes</span>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="window.location.href='clash-royale/index.html'">
+                <img src="clash-royale/images/clashroyale-android-ios-review.jpg" alt="Clash Royale" />
+                <div class="overlay">
+                    <h3>Clash Royale</h3>
+                    <p>Batalhas estratégicas em tempo real. Mobile Excellence</p>
+                    <span class="tag">Estratégia</span>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="window.location.href='/fortnite/index.html'">
+                <img src="fortnite/images/fornite.jpg" alt="Fortnite" />
+                <div class="overlay">
+                    <h3>Fortnite</h3>
+                    <p>Battle Royale com estratégia. Engine: Unreal Engine</p>
+                    <span class="tag">Battle Royale</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-code-section">
+        <div class="why-code-content">
+            <div class="why-code-card">
+                <i class="fas fa-lightbulb icon-large"></i>
+                <h3>Inovação em Pixels</h3>
+                <p>Cada linha de código é um potencial de inovação. Analisamos como as novas tecnologias transformam a
+                    jogabilidade e a fidelidade gráfica.</p>
+            </div>
+            <div class="why-code-card">
+                <i class="fas fa-brain icon-large"></i>
+                <h3>A Estratégia dos Devs</h3>
+                <p>Por que uma engine e não outra? Descubra as decisões estratégicas que os desenvolvedores tomam para
+                    otimizar desempenho e experiência.</p>
+            </div>
+            <div class="why-code-card">
+                <i class="fas fa-code icon-large"></i>
+                <h3>Seja um Game Dev</h3>
+                <p>Nossas análises servem como inspiração! Entenda o mercado, as linguagens mais requisitadas e comece
+                    sua jornada no desenvolvimento de jogos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Gamefy Code </p>
+    </footer>
+</body>
+
+</html>

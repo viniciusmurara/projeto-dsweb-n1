@@ -8,13 +8,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#programacao">Programação</a></li>
-                <li><a href="#pagina">Página</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../rocket-league/images/logo-games.png" alt="Logo Games">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../historia-programacao/index.html">História</a></li>
+                    <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -32,12 +37,118 @@
                     </div>
                 </div>
             </div>
-            <h2 class="subtitle">Tecnologias</h2>
-             <div class="technologies">
-                <img src="images/1643312603cpp.png" alt="C++">
-                <img src="images/download.png" alt="Java">
-                <img src="images/download (1).png" alt="Redis">
-             </div>
+        </section>
+        <section class="technologies-container">
+            <h2 class="subtitle">Tecnologias do Clash Royale</h2>
+            <div class="technologies">
+                <div class="tech-card">
+                    <img src="images/1643312603cpp.png" alt="C++">
+                    <div class="tech-info">
+                        <h3>C++</h3>
+                        <p>Utilizado no desenvolvimento do motor do jogo para processamento em tempo real das batalhas, física e renderização gráfica, garantindo alta performance e baixa latência.</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img src="images/download.png" alt="Java">
+                    <div class="tech-info">
+                        <h3>Java</h3>
+                        <p>Responsável pela lógica do servidor, gerenciamento de jogadores online, sistema de matchmaking e processamento das interações em tempo real entre jogadores.</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img src="images/download (1).png" alt="Redis">
+                    <div class="tech-info">
+                        <h3>Redis</h3>
+                        <p>Banco de dados em memória utilizado para cache de dados frequentes, ranking de jogadores e gerenciamento de sessões em tempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="history" id="historia">
+            <div class="container">
+                <div class="section-header">
+                    <h2>História do <span class="highlight">Clash Royale</span></h2>
+                    <p>Descubra a jornada desde o conceito inicial até se tornar um dos jogos mobile mais populares do mundo</p>
+                </div>
+                
+                <div class="history-content">
+                    <div class="king-image">
+                        <img src="/clash-royale/images/70c28173060ca5de04bca30283fc69f3.gif" alt="Clash Royale King" class="king-img">
+                    </div>
+                    <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2012</div>
+                        <div class="timeline-content">
+                            <h3>Origem no Clash of Clans</h3>
+                            <p>A Supercell começou a desenvolver o conceito do Clash Royale baseado no sucesso e universo do Clash of Clans.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-content">
+                            <h3>Lançamento Global</h3>
+                            <p>Clash Royale foi lançado globalmente em março de 2016, revolucionando o gênero de jogos mobile com sua mistura única de cartas e estratégia em tempo real.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-content">
+                            <h3>eSports e Competições</h3>
+                            <p>O jogo estabeleceu uma forte presença nos eSports com a Clash Royale League, oferecendo premiações milionárias e atraindo jogadores profissionais do mundo todo.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programming-curiosities" id="curiosidades">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Curiosidades de <span class="highlight">Programação</span></h2>
+                    <p>Explore os aspectos técnicos fascinantes por trás do desenvolvimento do Clash Royale</p>
+                </div>
+                
+                <div class="curiosities-grid">
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">60</div>
+                        <h3>FPS Otimizados</h3>
+                        <p>O jogo foi otimizado para rodar a 60 FPS constantes em dispositivos móveis, utilizando técnicas avançadas de renderização e otimização em C++.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">0.1</div>
+                        <h3>Latência Mínima</h3>
+                        <p>Sistema de sincronização cliente-servidor desenvolvido para manter latência abaixo de 100ms, mesmo em conexões móveis, usando predição de movimento.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">100K</div>
+                        <h3>Linhas de Código</h3>
+                        <p>O sistema de matchmaking e balanceamento contém mais de 100.000 linhas de código Java para garantir partidas justas e competitivas.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">103</div>
+                        <h3>Cartas Únicas</h3>
+                        <p>O sistema de balanceamento de cartas utiliza machine learning para analisar milhões de batalhas e manter o equilíbrio do jogo.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">2M</div>
+                        <h3>Jogadores Simultâneos</h3>
+                        <p>A infraestrutura Redis suporta mais de 2 milhões de jogadores simultâneos, gerenciando rankings e matchmaking em tempo real.</p>
+                    </div>
+                    
+                    <div class="curiosity-card">
+                        <div class="curiosity-number">32Hz</div>
+                        <h3>Tick Rate</h3>
+                        <p>Servidores operam a 32Hz para otimizar o desempenho em redes móveis, mantendo a sincronização perfeita entre os jogadores.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

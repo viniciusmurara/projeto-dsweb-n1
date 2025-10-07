@@ -10,13 +10,18 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#programacao">Programação</a></li>
-                <li><a href="#pagina">Página</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../rocket-league/images/logo-games.png" alt="Logo Games">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../historia-programacao/index.html">História</a></li>
+                    <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -28,65 +33,103 @@
                         <p>A programação de jogos une tecnologia e criatividade. Nesta página você vai encontrar um
                             resumo dos marcos mais importantes dos primeiros experimentos até os motores modernos.</p>
                     </div>
-
                     <div class="hero-image">
-                        <img src="images/game-history.jpg" alt="História dos jogos">
+                        <img src="images/game-history.png" alt="História dos Jogos">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-section">
-            <div class="hero-text">
-                <h1>Linha do <span class="highlight">tempo</span><br></h1>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Primórdios (1950–1960)</h3>
-                    <p>Em 1952 surgiu <em>OXO</em> (jogo-da-velha), em 1958 <em>Tennis for Two</em> e em 1962
-                        <em>Spacewar!</em>. Programação feita em baixo nível, diretamente no hardware.
-                    </p>
+        <section class="history" id="historia">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Linha do tempo</h2>
+                    <p>Da criação dos primeiros experimentos digitais até os motores modernos, a programação de jogos
+                        mostra a evolução entre tecnologia e criatividade.</p>
                 </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Anos 1970 — Arcades e Consoles</h3>
-                    <p>O Atari e os arcades popularizaram os jogos. Programadores trabalhavam em assembly,
-                        otimizando cada byte para rodar jogos como <em>Pong</em>.</p>
-                </div>
-            </div>
+                <div class="history-content">
+                    <div class="history-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1950</div>
+                            <div class="timeline-content">
+                                <div class="timeline-text">
+                                    <h3>Primórdios</h3>
+                                    <p>Em 1952 surgiu OXO (jogo-da-velha), em 1958 Tennis for Two e em
+                                        1962 Spacewar! Programação feita em baixo nível, diretamente no hardware.
+                                    </p>
+                                </div>
+                                <img src="images/spacewar.png" class="image-right" alt="Spacewar">
+                            </div>
+                        </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Anos 1980 — 8/16 bits</h3>
-                    <p>Com NES, Mega Drive e computadores domésticos, a programação mesclava assembly e C. Clássicos
-                        como Mario e Sonic surgiram nessa era.</p>
-                </div>
-            </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1970</div>
+                            <div class="timeline-content">
+                                <img src="images/pong.png" class="image-left" alt="Pong">
+                                <div class="timeline-text">
+                                    <h3>Arcades e Consoles</h3>
+                                    <p>O Atari e os arcades popularizaram os jogos. Programadores trabalhavam em
+                                        assembly, otimizando cada byte para rodar jogos como Pong.</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Anos 1990 — Chegada do 3D</h3>
-                    <p>Motores como o id Tech (Doom/Quake) e Unreal Engine mudaram a indústria. C e C++ dominaram o
-                        desenvolvimento.</p>
-                </div>
-            </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1980</div>
+                            <div class="timeline-content">
+                                <div class="timeline-text">
+                                    <h3>8/16 bits</h3>
+                                    <p>Com o NES e os computadores domésticos, a programação misturava C e assembly.
+                                        Clássicos como Mario nasceram nessa era. Já no fim da década, o Mega Drive 
+                                        introduziu a era dos 16 bits e personagens como Sonic.
+                                    </p>
+                                </div>
+                                <img src="images/sonic.png" class="image-right" alt="Sonic">
+                            </div>
+                        </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Anos 2000 — Engines acessíveis</h3>
-                    <p>Unity e Unreal se tornaram acessíveis. Jogos online e multiplataforma cresceram, e equipes
-                        começaram a se especializar.</p>
-                </div>
-            </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1990</div>
+                            <div class="timeline-content">
+                                <img src="images/doom.png" class="image-left" alt="Doom">
+                                <div class="timeline-text">
+                                    <h3>Chegada do 3D</h3>
+                                    <p>Engines como o id Tech (Doom em 1993, Quake em 1996) mudaram a indústria.
+                                        Em 1998 surgiu a Unreal Engine, consolidando o uso de C e C++ no desenvolvimento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Hoje — Diversidade técnica</h3>
-                    <p>C++, C#, Python e JavaScript são usados. Engines modernas, IA, redes e VR fazem parte do dia
-                        a dia, mas os indies mostram que um programador também pode criar sozinho.</p>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2000</div>
+                            <div class="timeline-content">
+                                <div class="timeline-text">
+                                    <h3>Engines acessíveis</h3>
+                                    <p>Unity, lançada em 2005, democratizou o desenvolvimento de jogos para indies. 
+                                        Unreal foi se tornando acessível com o tempo, mas jogos online e multiplataforma cresceram 
+                                        e as equipes começaram a se especializar.
+                                    </p>
+                                </div>
+                                <img src="images/unity-unreal.png" class="image-right" alt="Unity e Unreal">
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-content">
+                                <img src="images/tecnologias.png" class="image-left" alt="Tecnologias">
+                                <div class="timeline-text">
+                                    <h3>Diversidade técnica</h3>
+                                    <p>C++, C#, Python e JavaScript são usados. Engines modernas, IA, redes e VR fazem
+                                        parte do dia a dia, mas os indies mostram que um programador também pode criar
+                                        sozinho.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

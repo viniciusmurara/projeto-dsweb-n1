@@ -64,28 +64,23 @@ nav ul li a:hover {
 body {
     background-color: #ECEDE0;
     line-height: 1.6;
+    padding-top: 12vh;
 }
 
 section{
     display: flex;
     flex-direction: column;
 }
+
 .container {
     padding-inline: 14%;
 }
 
-.technologies{
-    display: flex;
-    height: 100px;
-    gap: 50px;
-    margin-top: 80px;
-}
-
 .hero {
-    padding: 5rem 0;
-    min-height: 70vh;
+    height: 88vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
@@ -93,6 +88,52 @@ section{
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    width: 100%;
+}
+
+.technologies-container {
+    text-align: center;
+    background: #F5F5F0;
+    padding: 5rem 0;
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tech-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    border: 2px solid #3C93AF;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.tech-info h3 {
+    color: #24384B;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.tech-info p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .hero-text h1 {
@@ -106,6 +147,13 @@ section{
 .hero-text .highlight {
     color: #3C93AF;
 }
+
+.technologies img{
+  
+  filter: brightness(0) saturate(100%) invert(17%) sepia(18%) saturate(974%) hue-rotate(173deg) brightness(96%) contrast(91%);
+
+}
+
 
 .hero-text p {
     font-size: 1rem;
@@ -136,23 +184,50 @@ section{
 }
 
 .subtitle{
-    margin-top: 80px;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #24384B;
+    margin-bottom: 3rem;
+    line-height: 1.2;
 }
-.fortnite-image {
+.hero-image {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fortnite-image img {
+.hero-image img {
     width: 100%;
     max-width: 600px;
-    height: auto;
+    height: 350px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    background-color: white;
+}
+
+/* História section styles */
+.history-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.history-timeline {
+    flex-grow: 1;
+    position: relative;
 }
 
 .players-badge {
@@ -166,4 +241,211 @@ section{
     font-weight: 600;
     font-size: 0.9rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção História */
+.history {
+    padding: 5rem 0;
+    background-color: #ECEDE0;
+}
+
+.history-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.history-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3C93AF, #24384B);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    background: #3C93AF;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 100px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 0 2rem;
+    flex: 1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E8E8E8;
+}
+
+.timeline-content h3 {
+    color: #24384B;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #5A5A5A;
+    line-height: 1.6;
+}
+
+/* Seção Curiosidades de Programação */
+.programming-curiosities {
+    padding: 5rem 0;
+    background-color: #F5F5F0;
+}
+
+.curiosities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.curiosity-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #E8E8E8;
+    position: relative;
+    overflow: hidden;
+}
+
+.curiosity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3C93AF, #24384B);
+}
+
+.curiosity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.curiosity-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3C93AF;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.curiosity-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #24384B;
+    margin-bottom: 1rem;
+}
+
+.curiosity-card p {
+    font-size: 0.9rem;
+    color: #5A5A5A;
+    line-height: 1.6;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tech-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #E8E8E8;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.tech-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8F9FA;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.tech-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.tech-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #24384B;
+    margin-bottom: 1rem;
+}
+
+.tech-card p {
+    font-size: 0.95rem;
+    color: #5A5A5A;
+    line-height: 1.6;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #24384B;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #5A5A5A;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
 }

@@ -7,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* ===== Layout Base ===== */
 body {
     background-color: #ECEDE0;
     line-height: 1.6;
@@ -68,7 +67,6 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* ===== Hero ===== */
 section {
     display: flex;
     flex-direction: column;
@@ -130,7 +128,6 @@ section {
     color: #ECEDE0;
 }
 
-/* ===== Tecnologias (mantida) ===== */
 .subtitle {
     margin-top: 80px;
     font-size: 2rem;
@@ -151,7 +148,6 @@ section {
     width: 200px;
 }
 
-/* ===== Hero Image ===== */
 .hero-image {
     position: relative;
     display: flex;
@@ -180,7 +176,6 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== História ===== */
 .history {
     padding: 5rem 0;
     background-color: #ECEDE0;
